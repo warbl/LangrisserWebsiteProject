@@ -1,0 +1,114 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 25, 2021, 8:41:50 PM
+    Author     : alexl
+*/
+/*  Use ONLY the "slash star ... star slash" style comment inside a style sheet */
+
+*{
+    box-sizing:border-box;
+}
+            /* Don't want tiny white border inside browser window - apply to html and body. */
+            html, body {  
+                margin:0; 
+                padding:0; 
+            }
+
+            body { 
+                background-color: #FFD15F; /* this is the turqoise color */
+                color: black;  /* color of font */
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; /* no tail font is more readable for small font */
+                font-size:16px;
+            }
+
+            #titleNav { /* titleNav is fixed, always at the top */
+
+                /* position fixed removes the element from the normal flow, placing it where you specify with top/bottom, left/right */
+                position:fixed; 
+                top:0px;
+                left:0px;
+                z-index: 1;     /* To make sure titleNav is on top of content, give it a higher z-index than content 
+                                (content would have default value of zero). */
+                width: 100%;    
+
+                background-color:#FFE198;
+
+                padding-bottom: 10px; 
+                padding-top:20px;
+                /* height: 86px; /* NEW */
+                color: black;
+                font-family: serif; 
+                font-weight: bold;
+                
+                /*mobile stuff*/
+                display:flex;
+                flex-direction: column;
+
+            }
+
+            #pageTitle { /* no change */
+                padding:12px;
+                padding-bottom: 0px;
+                font-size:48px;
+                letter-spacing: 1.5px; /* spaces out letters a bit */
+                whitespace:nowrap;
+            }
+
+            #nav { /* fix the nav bar */
+                position: fixed; 
+                top: 0px;
+                right: 0px;
+                text-align:right;
+                font-size:24px;
+                padding-bottom: 12px;
+                whitespace:nowrap;
+                padding-top:32px;
+            }
+
+
+            #nav a {  /* no change */
+                text-decoration:none;  /* Do not want links in "nav" to be underlined */
+                color: gray; /* light gray: to provide color for links, you have to style the "a" tag */
+            }
+
+            #content {  /* Added padding top and bottom to prevent top/bottom content from getting hidden under titleNav/footer */ 
+
+                padding:12px;
+                padding-top: 100px; /* prevent the top of the content from getting hidden under the fixed titleNav */
+                padding-bottom: 40px; /* prevent the the bottom of the content from getting hidden under the fixed footer */
+            }
+
+            #footer { /* footer fixed, always at the bottom */
+                position: fixed;
+                bottom: 0px; 
+                left: 0px; 
+                z-index: 1; /* make sure footer is on top of content which would have default z-index value of 0 */
+
+                background-color:#FFE198;
+                color: brown; 
+                width:100%;
+                text-align:center;
+                padding:8px;
+                padding-bottom: 30px;
+            }
+            
+            @media only screen and (min-width : 600px){
+                #titleNav{
+                    flex-direction: row;
+                    justify-content: space-between
+                }
+                
+                .row{
+                    flex-direction:row;
+                }
+                .column33{
+                    width:33%;
+                }
+                .column66{
+                    width:66%;
+                }
+            }

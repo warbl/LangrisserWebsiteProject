@@ -1,0 +1,11 @@
+SMAP
+listOtherAPI_jsp.java
+JSP
+*S JSP
+*F
++ 0 listOtherAPI.jsp
+webAPIs/listOtherAPI.jsp
+*L
+1,11:51
+13,18:63
+*E

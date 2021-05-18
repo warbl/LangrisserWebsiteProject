@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Use this type of comment within HTML -->
+        <title>Langrisser Mobile Stuff</title>
+        <meta charset ="UTF-8">
+        <meta name ="viewport" content ="width=device-width, initial-scale = 1.0">
+        
+        <!-- External style sheet -->
+        <link rel="stylesheet" href="stylesheet.css" type = "text/css">
+        <link rel="stylesheet" href ="dropdown.css" type ="text/css">
+        <link rel="stylesheet" href ="charStyle.css" type ="text/css">
+        
+        <!-- this is your internal style sheet -->
+        <style> 
+
+   
+
+
+        </style>
+    </head>
+    <body>
+
+        <div id="titleNav">
+            <div id="title">
+                Langrisser Teams
+            </div>
+            <div id="nav">
+                <div class="dropdown">
+                    <a href = "#/home">Home</a>
+                </div>
+                <div class="dropdown">
+                    <div class="dropHeader" onclick="drop(this, 'hide', 'show')">Account</div>
+                    <div class="dropContent">
+                        <a href = "#/insertUser">Register</a> <br/>
+                        <a href = "#/logOn">Log In</a> <br/>
+                        <a href = "#/getProfile">Profile</a> <br/>
+                        <a href = "#/logOut">Log Out</a>
+                    </div> 
+                </div>
+                <div class="dropdown">
+                    <div class="dropHeader" onclick="drop(this, 'hide', 'show')">Search</div>
+                    <div class="dropContent">
+                        <a href = #/players>Players</a> <br/>
+                        <a href = #/characters>Characters</a> <br/>
+                        <a href = #/twoChars>JSObjects</a>
+                        <a href = #/livePlayers>LivePlayers</a>
+                        <a href = #/liveCharacters>LiveCharacters</a>
+                        
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropHeader" onclick="drop(this, 'hide', 'show')">Tutorial</div>
+                    <div class="dropContent">
+                        <a>Proposal</a> <br/>
+                        <a>Proof Of Concept</a> <br/>
+                        <a>Tutorial Home</a> <br/>
+                        <a>Demo</a> <br/>
+                    </div> 
+                </div>          
+                <div class="dropdown">
+                    <a href = "#/blog">Blog</a> 
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+
+        </div> <!-- content. [[Keep track of nesting]] -->
+        <div id="footer">
+            Alex Liu
+        </div>
+        
+        <script src="js/components/home.js"></script>
+        <script src="js/components/blog.js"></script>
+        <script src="js/components/twoChars.js"></script>
+        <script src="js/components/players.js"></script>
+        <script src="js/components/characters.js"></script>
+        <script src="js/components/webUserList.js"></script>
+        <script src="js/components/liveCharacters.js"></script>
+        <script src ="js/components/account.js"></script>
+        <script src ="js/components/webUserMods.js"></script>
+        <script src ="js/components/characterMods.js"></script>
+        
+        
+        <script src="js/reusable/dropFW.js"></script>
+        <script src="js/reusable/routeFW.js"></script>
+        <script src ="js/reusable/makeChar.js"></script>
+        
+        <script src="js/reusable/ajax.js"></script>
+        <script src="js/reusable/MakeClickSortTable.js"></script>
+        <script src="js/reusable/SortableTableUtils.js"></script>
+        <script src = "js/reusable/Utils.js"></script>
+        
+        <script src="js/CRUD_icons.js"></script>  
+        
+       
+        <script>
+
+            
+            // this is permanent code -- you need this...
+            dropFW("dropHeader", "dropContent", "hide", "show");
+            
+        </script>
+
+        <script>
+
+            "use strict";
+
+            // Declare an array to store our routes:
+            var myRoutes = [];
+
+            // Add link/content entries into the route array.
+            // Remember that with JS associative array syntax, the keys look like index values even though 
+            // they are character strings, not integers. 
+            // In this version of the code, the value stored is a function not a character string.
+            myRoutes['/'] = home;
+            myRoutes['#/home'] = home;
+            myRoutes['#/blog'] = blog; // blog is a function stored in js/components/blog.js
+            myRoutes['#/twoChars'] = twoChars;
+            myRoutes['#/players'] = players;
+            myRoutes['#/characters'] = characters;
+            myRoutes['#/livePlayers'] = livePlayers;
+            myRoutes['#/liveCharacters'] = liveCharacters;
+
+            myRoutes['#/logOn'] = account.logon;
+            myRoutes['#/logOut'] = account.logoff;
+            myRoutes['#/getProfile'] = account.getProfile;
+            
+            myRoutes['#/insertUser'] = webUserMods.insert;
+            myRoutes['#/insertOther'] = characterMods.insert;
+            
+            myRoutes['#/userUpdate'] = webUserMods.update; // public method defined in webUserMods.js
+            myRoutes['#/characterUpdate'] = characterMods.update;
+
+            // routeFw returns an object that has private and public 
+            // data members and methods. 
+            // This "consumer code" specifies input parameters of an array of objects that each 
+            // specify path and content, id of DOM element where the FW is to place the content, 
+            // and the desired starting path. 
+            var myRouteFw = routeFw({
+                routeArray: myRoutes,
+                contentId: "content", 
+                startLink: "#/home"
+            });
+
+            // print the routes (check console.log)
+            // This example is a bit silly (since the HTML page already has access to the route 
+            // array), but it does show you how the HTML page can get a reference to an object 
+            // and then use that to invoke any public methods on the object. 
+            myRouteFw.printRoutes();
+        </script>
+        
+    </body>
+</html>

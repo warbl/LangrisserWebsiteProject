@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>web/js/components/twoChars.js</url>
+            <bookmark id="1">
+                <name/>
+                <line>13</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/web/js/components/account.js</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/web/js/components/liveCharacters.js</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/src/java/model/characters/DbMods.java</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/web/js/components/characterMods.js</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/web/dropdown.css</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/web/index.html</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/web/webAPIs/logoffAPI.jsp</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/web/webAPIs/insertOtherAPI.jsp</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/src/java/dbUtils/FormatUtils.java</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/src/java/dbUtils/PrepStatement.java</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/src/java/model/characters/StringData.java</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/web/stylesheet.css</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/web/webAPIs/logonAPI.jsp</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/web/js/components/webUserList.js</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/web/webAPIs/deleteCharacterAPI.jsp</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/src/java/dbUtils/ValidationUtils.java</file>
+            <file>file:/C:/Users/alexl/OneDrive/Documents/NetBeansProjects/Javascript_Activity/src/java/model/characters/StringDataList.java</file>
+        </group>
+    </open-files>
+</project-private>

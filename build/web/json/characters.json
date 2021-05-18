@@ -1,0 +1,54 @@
+[
+
+    {
+        "charactersId": "1",
+        "charactersName": "Ainz",
+        "charactersImg": "https://lh5.googleusercontent.com/oXD0vHUf1kerrIm702waky-G_a9Ho0pMdzuVmi_vXkR9oKnniZd2Ul4J1c8gpxrtj_v0KgALvG_ghXzh-JdGTTTOxPUS4oY4DIydHgZ4Y5UEiFCp2cvz=w1280",
+        "charactersMainFaction": "Dark Reincarnation",
+        "charactersBuffBool": "0",
+        "charactersFactionNum":"3",
+        "webUserId":"6",
+        "errorMsg": ""
+       
+    },
+    {
+        "charactersId":"2",
+        "charactersName": "Aka",
+        "charactersImg": "https://lh6.googleusercontent.com/O6aumYzhkYtceJjsaK2gM8W0AaJw7iFnipUXntRMsirlwbDICQPf5venWmiZ3DJHS-Gu8tjO7PRsOGjIMtni_2DkGVyDOl-Nr7KSGiphH_r66ky_qZc=w1280",
+        "charactersMainFaction": "Legion of Glory",
+        "charactersBuffBool": "0",
+        "charactersFactionNum":"3",
+        "webUserId":"6",
+        "errorMsg": ""
+    },
+    {
+        "charactersId":"3",
+        "charactersName": "Albedo",
+        "charactersImg": "https://lh5.googleusercontent.com/4659XByjohny8dfClpC8axb1leUHteV_WWv0OgUI07T6SlSDSyKchUEFWMvWq8dJxXDQGgg94fffUqqwipQJSemgg12ShsPDn9Q34ADeAtxtDPkxMntC=w1280",
+        "charactersMainFaction": "Dark Reincarnation",
+        "charactersBuffBool": "0",
+        "charactersFactionNum":"3",
+        "webUserId":"7",
+        "errorMsg": ""
+    },
+    {
+        "charactersId":"4",
+        "charactersName": "Altemuller",
+        "charactersImg": "https://lh4.googleusercontent.com/owTuzF_7qsdkbohZ2BNiZb9OiBTdy8KVudTPvKjT0fmMRK4Vj053lCeN2VGMLRymcw0LntqE3PRUrW_YZ-ThpAC9d-AbAKQ_VUcMxYaN9n-wh57lLWGU=w1280",
+        "charactersMainFaction": "Strategic Masters",
+        "charactersBuffBool": "1",
+        "charactersFactionNum":"3",
+        "webUserId":"7",
+        "errorMsg": ""
+    },
+    {
+        "charactersId":"5",
+        "charactersName": "Alustriel",
+        "charactersImg": "https://lh4.googleusercontent.com/IbWZ_JAomzW8N4L5Wco70ukJ6aCQ7zCQ1YU3KchoXBEczSiwmEV-QIV8JhQKZ8m0LW2Y_vON9EnFOynuqjYMSSMK2g4fiqy43CPsQaLqv5C3plewh-4=w1280",
+        "charactersMainFaction": "Legion of Glory",
+        "charactersBuffBool": "0",
+        "charactersFactionNum":"3",
+        "webUserId":"8",
+        "errorMsg": ""
+    }
+]
